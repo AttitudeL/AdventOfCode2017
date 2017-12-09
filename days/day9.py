@@ -38,7 +38,6 @@ def part_one(string):
 
 def part_two(string):
     count = 0
-    garbage = ""
     while '<' in string:
         si = -1
         ei = -1
@@ -51,16 +50,10 @@ def part_two(string):
             elif string[i] == '>':
                 ei = i
                 break
+            elif si != -1:
+                count += 1
             i += 1
-        garbage += string[si + 1:ei]
         string = string[:si] + string[ei + 1:]
-    i = 0
-    while i < len(garbage):
-        if garbage[i] == '!':
-            i += 2
-        else:
-            count += 1
-            i += 1
     return count
 
 if __name__ == "__main__":
