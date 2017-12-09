@@ -50,7 +50,6 @@ def part_two(l):
             d[ins[0]] = ins[1](d[ins[0]], ins[2])
             largest = max(largest, d[ins[0]])
     return largest
-    
 
 if __name__ == "__main__":
     current_file = os.path.splitext(os.path.basename(__file__))[0]
