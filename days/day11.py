@@ -1,5 +1,4 @@
 import os
-from collections import Counter
 
 INPUT_DIRECTORY = "../inputs/"
 INPUT_FILE_EXTENSION = "_input.txt"
