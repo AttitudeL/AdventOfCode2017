@@ -16,7 +16,6 @@ def load_input(input_file):
         ids.append((id, link))
     return ids
 
-
 def part_one(ids):
     id_maps = {}
     for id in ids:
@@ -43,7 +42,7 @@ def part_one(ids):
             queue.append(linked_id)
     return len(result)
 
-def part_two(directions):
+def part_two(ids):
     id_maps = {}
     for id in ids:
         if id[0] not in id_maps:
