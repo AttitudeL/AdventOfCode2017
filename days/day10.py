@@ -68,7 +68,7 @@ def part_two(l, ll):
     lll = []
     for chunk in ll:
         lll.append(reduce(lambda x, y: x^y, chunk))
-    result = ""
+    result = ''
     for d in lll:
         h = hex(d).replace('0x', '')
         if len(h) == 1:
