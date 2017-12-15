@@ -19,29 +19,26 @@ def load_input(input_file):
             scanners[layer] = None
     return scanners
 
-def get_scanner_position(step, scanner_range):
-    position = step % (scanner_range * 2 - 2)
-    if position >= scanner_range:
-        position -=  - 1
-    return position
+def is_at_top(step, scanner_range):
+    return step % (scanner_range * 2 - 2) == 0
 
 def part_one(scanners):
     severity = 0
     for step, layer in enumerate(scanners):
-        if scanners[layer] is not None and get_scanner_position(step, scanners[layer][0]) == 0:
+        if scanners[layer] is not None and is_at_top(step, scanners[layer][0]):
             severity +=  layer * scanners[layer][0]
     return severity
 
 def part_two(scanners):
     delay = 0
     while True:
-        if get_scanner_position(delay, scanners[0][0]) == 0:
+        if is_at_top(delay, scanners[0][0]):
            delay += 1
            continue
         step = delay
         caught = False
         for layer in scanners:
-            if scanners[layer] is not None and get_scanner_position(step, scanners[layer][0]) == 0:
+            if scanners[layer] is not None and is_at_top(step, scanners[layer][0]):
                 caught = True
                 break
             step += 1
