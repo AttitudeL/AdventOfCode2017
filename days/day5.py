@@ -1,7 +1,7 @@
 import os
 
-INPUT_DIRECTORY = "../inputs/"
-INPUT_FILE_EXTENSION = "_input.txt"
+INPUT_DIRECTORY = '../inputs/'
+INPUT_FILE_EXTENSION = '_input.txt'
 
 def load_input(input_file):
     l = []
@@ -37,7 +37,7 @@ def part_two(l):
             l[j] += 1
         steps += 1
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     current_file = os.path.splitext(os.path.basename(__file__))[0]
     l1 = load_input(current_file + INPUT_FILE_EXTENSION)
     l2 = load_input(current_file + INPUT_FILE_EXTENSION)

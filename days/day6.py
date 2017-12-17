@@ -1,8 +1,8 @@
 import os
 import operator
 
-INPUT_DIRECTORY = "../inputs/"
-INPUT_FILE_EXTENSION = "_input.txt"
+INPUT_DIRECTORY = '../inputs/'
+INPUT_FILE_EXTENSION = '_input.txt'
 
 def load_input(input_file):
     l = []
@@ -48,7 +48,7 @@ def part_two(l):
             s.append(c)
     return len(s) - s.index(c)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     current_file = os.path.splitext(os.path.basename(__file__))[0]
     l = load_input(current_file + INPUT_FILE_EXTENSION)
     print part_one(l)

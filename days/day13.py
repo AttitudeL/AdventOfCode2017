@@ -1,7 +1,7 @@
 import os
 
-INPUT_DIRECTORY = "../inputs/"
-INPUT_FILE_EXTENSION = "_input.txt"
+INPUT_DIRECTORY = '../inputs/'
+INPUT_FILE_EXTENSION = '_input.txt'
 
 def load_input(input_file):
     scanners = {}
@@ -47,7 +47,7 @@ def part_two(scanners):
         delay += 1
     return delay
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     current_file = os.path.splitext(os.path.basename(__file__))[0]
     scanners = load_input(current_file + INPUT_FILE_EXTENSION)
     print part_one(scanners)

@@ -1,7 +1,7 @@
 import os
 
-INPUT_DIRECTORY = "../inputs/"
-INPUT_FILE_EXTENSION = "_input.txt"
+INPUT_DIRECTORY = '../inputs/'
+INPUT_FILE_EXTENSION = '_input.txt'
 
 def load_input(input_file):
     matrix = []
@@ -31,7 +31,7 @@ def part_two(matrix):
             i += 1
     print sum(result)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     current_file = os.path.splitext(os.path.basename(__file__))[0]
     matrix = load_input(current_file + INPUT_FILE_EXTENSION)
     part_one(matrix)

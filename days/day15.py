@@ -1,7 +1,7 @@
 import os
 
-INPUT_DIRECTORY = "../inputs/"
-INPUT_FILE_EXTENSION = "_input.txt"
+INPUT_DIRECTORY = '../inputs/'
+INPUT_FILE_EXTENSION = '_input.txt'
 
 def load_input(input_file):
     relative_path = os.path.join(os.path.dirname(__file__), INPUT_DIRECTORY + input_file)
@@ -51,7 +51,7 @@ def part_two(a_start, b_start):
         except StopIteration:
             return judge
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     current_file = os.path.splitext(os.path.basename(__file__))[0]
     a_start, b_start = load_input(current_file + INPUT_FILE_EXTENSION)
     print part_one(a_start, b_start)
