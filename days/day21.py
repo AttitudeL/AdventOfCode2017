@@ -16,10 +16,6 @@ def load_input(input_file):
         value = '\n'.join(matcher.group(2).split('/'))
         rule[key] = value
     return rule
-    # relative_path = os.path.join(os.path.dirname(__file__), INPUT_DIRECTORY + input_file)
-    # with open(relative_path, 'r') as opened_file:
-    #     content = opened_file.read()
-    # return content
 
 START_PATTERN = '.#.\n..#\n###'
 
