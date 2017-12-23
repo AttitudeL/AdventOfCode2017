@@ -91,7 +91,6 @@ def part_two(instructions):
         b += 17
     """
     while b <= c:
-        f = 1
         e = 2
         while e < b:
             if b % e == 0:
