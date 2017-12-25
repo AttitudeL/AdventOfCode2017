@@ -17,7 +17,6 @@ def move_left(tape, index):
     return new_index
 
 """
-致敬祖师爷！
 Respect Turing!
 """
 def turing_machine():
@@ -94,4 +93,4 @@ def turing_machine():
     return tape.count(1)
 
 if __name__ == '__main__':
-    print part_one()
+    print turing_machine()
