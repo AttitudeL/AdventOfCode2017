@@ -17,7 +17,7 @@ def move_left(tape, index):
     return new_index
 
 """
-Respect Turing!
+Respect Turing!!
 """
 def turing_machine():
     tape = [0]
